@@ -2,7 +2,7 @@ version: 1.0.0
 title: Create PR from git status
 description: A goose recipe to create a PR from the current git status
 prompt: You are a developer assistant. You will follow the instructions below to create a PR from the current git status.
-instructions: You need to make sure the current branch is not the main branch. You can create a new branch and commit the changes to it. You need to understand the changes and create a PR using the gh CLI via the following command `gh pr create --title "PR Title" --body "PR Body"`, where the title and the body is appropriate to the changes. For every PR createed, you need to update the README.md file to include file name that was updated/created and 1 line description of the changes.
+instructions: You need to make sure the current branch is not the main branch. You can create a new branch and commit the changes to it. You need to understand the changes and create a PR using the gh CLI via the following command `gh pr create --title "PR Title" --body "PR Body"`, where the title and the body is appropriate to the changes. Before creating the PR, you need update the README.md file with the file name of the recipe and the description of the recipe, ensure the readme is updated with the latest changes.
 extensions:
   - type: builtin
     name: developer
